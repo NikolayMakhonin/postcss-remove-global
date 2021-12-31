@@ -6,9 +6,9 @@ module.exports = postcss.plugin(pluginName, () => (root) => {
     // :global in rules
     root.walkRules(rule => {
         // :global as nested selector
-        const globalReg = /:global(\s+)/;
+        const globalReg = /:global(\s+)/g;
         // :global(.selector) as nested selector
-        const globalWithSelectorReg = /:global\(((?:[^\)])+)\)/;
+        const globalWithSelectorReg = /:global\(((?:[^\)])+)\)/g;
         if (rule.selector === ':global') {
             rule.parent.append(...rule.nodes);
             rule.remove();
