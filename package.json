@@ -1,6 +1,6 @@
 {
   "name": "@flemist/postcss-remove-global",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "PostCSS plugin to remove :global identifier from stylesheets",
   "keywords": [
     "postcss",
